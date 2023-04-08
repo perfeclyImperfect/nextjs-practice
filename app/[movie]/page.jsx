@@ -7,9 +7,12 @@ export default async function page({params}) {
   const data = await fetch(`https://api.themoviedb.org/3/movie/${movie}?api_key=${process.env.API_KEY}`)
   const res = await data.json()
   return (
-    <div className='grid grid-cols-4 gap-12'>
+    <div className='grid grid-cols-3 gap-12'>
       <div>
-        <h2 className='text-3xl'>{res.title}</h2>
+       
+      </div>
+      <div>
+      <h2 className='text-3xl'>{res.title}</h2>
         <h2 className='text-lg'>{res.release_date}</h2>
         <h2 className='text-lg'>Runtime: {res.runtime} mins</h2>
         <h2 className='bg-green-500 inline-block my-2 py-2 px-3 rounded-md'>{res.status}</h2>
@@ -21,9 +24,6 @@ export default async function page({params}) {
           alt={res.title}
         />
         <h2 className='text-md'>{res.overview}</h2>
-      </div>
-      <div>
-        
       </div>
     </div>
   )
