@@ -1,3 +1,4 @@
+import Head from './Head'
 import './globals.css'
 
 export const metadata = {
@@ -8,7 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='mx-24 my-12 bg-gray-800'>
+        {children}
+      </body>
     </html>
   )
 }
