@@ -1,4 +1,3 @@
-import Head from './Head'
 import './globals.css'
 
 export const metadata = {

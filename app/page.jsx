@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Movie from './Movie'
-import Head from './Head'
 
 const inter = Inter({ subsets: ['latin'] })
 
