@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main>
-      <h1>Benja Carlo Soliman 😎</h1>
+      <h1>paltak 😎</h1>
     </main>
   )
 }
